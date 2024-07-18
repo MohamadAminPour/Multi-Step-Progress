@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>multi step progress</title>
+</head>
+
+<body>
+
+
+    <div class="multiStep">
+        <div class="multiStep-right">
+            <div class="multiStep-right__container">
+                <div class="multiStep-right__header">
+                    <div class="multiStep-right__header-left">
+                        <span class="multiStep-right__header-left__title">Personal Information</span>
+                        <span class="multiStep-right__header-left__subtitle">Enter your personal information
+                            correctly</span>
+                    </div>
+                    <div class="multiStep-right__header-right">
+                        <img src="" class="multiStep-right__header-right__img">
+                    </div>
+                </div>
+                <!--start form-->
+                <div class="multiStep-boxs step1">
+                    <div class="multiStep-right__container-personal multiStep-box">
+                        <form class="personal-form">
+                            <label class="personal-form__EmailLabel label">Email</label>
+                            <input type="text" class="personal-form__EmailInput input" placeholder="example@gmail.com">
+                            <label class="personal-form__UsernameLabel label">Username</label>
+                            <input type="text" class="personal-form__UsernameInput input" placeholder="Username">
+                            <label class="personal-form__PasswordLabel label">Password</label>
+                            <input type="text" class="personal-form__PasswordInput input" placeholder="Password">
+                            <input type="text" class="personal-form__PasswordInput input" placeholder="Confrim Password">
+                        </form>
+                    </div>
+                    <div class="multiStep-right__container-personal multiStep-box">
+                        <form class="personal-form">
+                            <label class="personal-form__phoneLabel label">Phone</label>
+                            <input type="text" class="personal-form__phoneInput input" placeholder="0915 ×××××××">
+                            <label class="personal-form__AddressLabel label">Address</label>
+                            <input type="text" class="personal-form__AddressInput input" placeholder="Street Address">
+                            <label class="personal-form__selectLabel label">City</label>
+                            <select class="personal-form__selectCity input">
+                                <option value="Your City" class="personal-form__optionCity">Your City</option>
+                                <option value="Tehran" class="personal-form__optionCity">Tehran</option>
+                                <option value="Yazd" class="personal-form__optionCity">Yazd</option>
+                                <option value="Shiraz" class="personal-form__optionCity">Shiraz</option>
+                                <option value="Mashhad" class="personal-form__optionCity">Mashhad</option>
+                                <option value="Esfahan" class="personal-form__optionCity">Esfahan</option>
+                            </select>
+                            <label class="personal-form__selectLabel label">Country</label>
+                            <select class="personal-form__selectCountry input">
+                                <option value="Your Country" class="personal-form__optionCountry">Your Country</option>
+                                <option value="Tehran" class="personal-form__optionCountry">Canada</option>
+                                <option value="Yazd" class="personal-form__optionCountry">USA</option>
+                                <option value="Shiraz" class="personal-form__optionCountry">Iran</option>
+                                <option value="Mashhad" class="personal-form__optionCountry">Turkey</option>
+                                <option value="Esfahan" class="personal-form__optionCountry">India</option>
+                            </select>
+                            <label class="personal-form__StateLabel label">State</label>
+                            <input type="text" class="personal-form__StateInput input" placeholder="State">
+                        </form>
+                    </div>
+                    <div class="multiStep-right__container-personal multiStep-box">
+                        <form class="personal-form">
+                            <label class="personal-form__FirstNameLabel label">First Name</label>
+                            <input type="text" class="personal-form__FirstNameInput input" placeholder="First Name">
+                            <label class="personal-form__LastNameLabel label">Last Name</label>
+                            <input type="text" class="personal-form__LastNameInput input" placeholder="Last Name">
+                            <label class="personal-form__BirthLabel label">Date of Birth</label>
+                            <input type="date" class="personal-form__EmailInput input" placeholder="example@gmail.com">
+                        </form>
+                    </div>
+                </div>
+                <!--finish form-->
+                <div class="personal-form__Btns">
+                    <button class="personal-form__NextBtn btn">Next Stap</button>
+                    <button class="personal-form__prevBtn btn">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="multiStep-left">
+            <div class="multiStep-left__steps">
+                <div class="multiStep-left__step">
+                    <div class="multiStep-left__step1-circle circle active">1</div>
+                </div>
+                <div class="multiStep-left__step">
+                    <div class="multiStep-left__step2-bar bar"></div>
+                    <div class="multiStep-left__step2-circle circle">2</div>
+                </div>
+                <div class="multiStep-left__step">
+                    <div class="multiStep-left__step3-bar bar"></div>
+                    <div class="multiStep-left__step3-circle circle">3</div>
+                </div>
+            </div>
+
+            <div class="multiStep-left__texts">
+                <div class="multiStep-left__text">
+                    <span class="multiStep-left__text1-title title">Personal</span>
+                    <span class="multiStep-left__text1-subtitle subtitle">25s to complete</span>
+                </div>
+                <div class="multiStep-left__text">
+                    <span class="multiStep-left__text2-title title">Contact</span>
+                    <span class="multiStep-left__text2-subtitle subtitle">60s to complete</span>
+                </div>
+                <div class="multiStep-left__text">
+                    <span class="multiStep-left__text3-title title">Security</span>
+                    <span class="multiStep-left__text3-subtitle subtitle">30s to complete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
